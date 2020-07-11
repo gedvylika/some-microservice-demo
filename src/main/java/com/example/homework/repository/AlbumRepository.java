@@ -1,4 +1,5 @@
 package com.example.homework.repository;
+import com.example.homework.model.Album;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

@@ -4,8 +4,11 @@ import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import com.example.homework.repository.Album;
-import com.example.homework.repository.Artist;
+import com.example.homework.controller.contract.AlbumDTO;
+import com.example.homework.controller.contract.ArtistDTO;
+import com.example.homework.controller.contract.OperationResult;
+import com.example.homework.model.Album;
+import com.example.homework.model.Artist;
 import com.example.homework.service.ArtistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -38,7 +41,7 @@ public class APIController {
     @GetMapping("/v1/artist/favorite/view/top5albums")
     @ResponseBody
     public List<AlbumDTO> viewTop5Albums(@RequestParam(name = "artistId", required = true) Long artistId,
-                                          @RequestParam(name = "userId", required = true) Long userId) {
+                                         @RequestParam(name = "userId", required = true) Long userId) {
         var result = artistService.getArtistTop5Albums(artistId, userId);
         return transform(result, albumToDTO);
     }

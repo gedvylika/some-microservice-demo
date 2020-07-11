@@ -1,4 +1,4 @@
-package com.example.homework.repository;
+package com.example.homework.model;
 
 import lombok.*;
 

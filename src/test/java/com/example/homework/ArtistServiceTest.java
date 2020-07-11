@@ -2,6 +2,8 @@ package com.example.homework;
 
 import be.ceau.itunesapi.response.Response;
 import be.ceau.itunesapi.response.Result;
+import com.example.homework.model.Artist;
+import com.example.homework.model.LastSearch;
 import com.example.homework.repository.*;
 import com.example.homework.service.ArtistService;
 import com.example.homework.service.DownloaderService;

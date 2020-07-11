@@ -1,6 +1,10 @@
 package com.example.homework.service;
 
 import be.ceau.itunesapi.response.Result;
+import com.example.homework.model.Album;
+import com.example.homework.model.Artist;
+import com.example.homework.model.FavoriteArtist;
+import com.example.homework.model.LastSearch;
 import com.example.homework.repository.*;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;

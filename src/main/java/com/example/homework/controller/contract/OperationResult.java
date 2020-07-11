@@ -1,4 +1,4 @@
-package com.example.homework.controller;
+package com.example.homework.controller.contract;
 
 
 import lombok.Getter;
